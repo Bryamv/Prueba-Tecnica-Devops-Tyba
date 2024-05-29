@@ -1,8 +1,6 @@
-import express from 'express'
-
-import { getCatController } from './cat.controller.js';
-import { generateCatPage } from './cat.page.js';
-
+const express = require('express');
+const { getCatController } = require('./cat.controller.js');
+const { generateCatPage } = require('./cat.page.js');
 const router = express.Router();
 
 router.get('/cat', async (req, res) => {
@@ -15,5 +13,4 @@ router.get('/cat', async (req, res) => {
         res.status(500).json({ error: err.message });
     }
 })
-
-export default router;
+module.exports = router;

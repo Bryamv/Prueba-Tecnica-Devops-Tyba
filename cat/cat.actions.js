@@ -4,4 +4,4 @@ async function getCat() {
     return cat;
   }
 
-export { getCat }
+module.exports = { getCat }

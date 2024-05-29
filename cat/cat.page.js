@@ -1,4 +1,4 @@
-export function generateCatPage({ url: cat }) {
+function generateCatPage({ url: cat }) {
     return `
         <!DOCTYPE html>
         <html lang="en">
@@ -29,3 +29,4 @@ export function generateCatPage({ url: cat }) {
     `;
 }
 
+module.exports = { generateCatPage };

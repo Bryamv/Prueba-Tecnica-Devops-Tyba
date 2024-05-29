@@ -1,4 +1,5 @@
-import { getCat } from './cat.actions.js'
+
+const { getCat } = require('./cat.actions.js');
 
 async function getCatController() {
     const cat = await getCat();
@@ -8,4 +9,4 @@ async function getCatController() {
     return cat;
 }
 
-export { getCatController }
+module.exports = { getCatController };

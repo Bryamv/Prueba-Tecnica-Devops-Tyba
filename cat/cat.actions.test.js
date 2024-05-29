@@ -1,4 +1,4 @@
-import { getCat } from './cat.actions.js'
+const { getCat } = require("./cat.actions");
 describe("getCat", () => {
   it("should fetch a cat image", async () => {
     const cat = await getCat();
