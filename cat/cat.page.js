@@ -1,4 +1,4 @@
-export function generateCatPage(cat) {
+export function generateCatPage({ url: cat }) {
     return `
         <!DOCTYPE html>
         <html lang="en">
@@ -23,7 +23,7 @@ export function generateCatPage(cat) {
         </head>
         <body>
             <h1>Here is a cat for you!</h1>
-            <img src="${cat.url}" alt="A cute cat" style="max-width: 100%; height: 500px;">
+            <img src="${cat}" alt="A cute cat" style="max-width: 100%; height: 500px;">
         </body>
         </html>
     `;
