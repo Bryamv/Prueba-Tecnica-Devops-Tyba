@@ -30,5 +30,11 @@ Este comando iniciará un servidor de Node.js que escuchará en el puerto 3000 y
 
 Tyba utiliza una API de TheCatAPI para obtener una imagen de un gato aleatorio. La API proporciona una URL de la imagen en formato PNG.
 
+## Probar desde docker Hub
+```bash
+docker pull docker pull bryamv/prueba-tecnica-devops-tyba
+docker run -p 3000:3000 bryamv/prueba-tecnica-devops-tyba
+
+```
 
 
